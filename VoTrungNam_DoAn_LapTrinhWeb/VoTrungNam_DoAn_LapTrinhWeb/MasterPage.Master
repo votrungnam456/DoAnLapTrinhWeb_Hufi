@@ -1,0 +1,129 @@
+﻿
+
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="VoTrungNam_DoAn_LapTrinhWeb.MasterPAge" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Demo</title>
+    <link rel="stylesheet" href="MasterPage2.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+<div class="container">
+      <header >
+          <div style="background-image:linear-gradient(to right,white,red)" class="logo">
+              <table>
+                  <tr >
+                      <td><img class="logo" style="width:100px;height:80px" src="images/logo.png"/></td>
+                      <td style="text-align:center"><span>VTN Furniture nơi cung cấp sản phẩm chất lượng hàng đầu</span></td>
+                  </tr>
+              </table>
+               
+              
+          </div>
+         
+          <nav style="width:960px;">          
+          <div  class="navi">
+            <a class="key" style="color: red" href="#">TRANG CHỦ</a>
+            <a href="#">GIỚI THIỆU</a>
+            <a href="#">TIN TỨC</a>
+            <a class="sanpham" href="#">SẢN PHẨM</a>
+<%--            <div id="menu-sanpham">
+                <div class="menu-column">
+                    <h3>Nội thất nhà ở</h3>
+                    <ul>
+                        <li><a>Tủ</a></li>
+                        <li><a>Bàn</a></li>
+                        <li><a>Ghế</a></li>
+                    </ul>
+                </div>
+                <div id="Div1">
+                    <h3>Nội thất nhà ở</h3>
+                    <ul>
+                        <li><a>Tủ</a></li>
+                        <li><a>Bàn</a></li>
+                        <li><a>Ghế</a></li>
+                    </ul>
+                </div>
+            </div>    --%>            
+            <a href="#">LIÊN HỆ</a>
+          </nav>
+           <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/NoiThatSlideShow.jpg">
+                    <!-- <div class="text">Caption Text</div> -->
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/NoiThatSlideShow.jpg">
+                    <!-- <div class="text">Caption Two</div> -->
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/NoiThatSlideShow.jpg">
+                    <!-- <div class="text">Caption Three</div> -->
+                </div>
+                <a class="prev" onclick="minusSlides()">&#10094;</a>
+                <a class="next" onclick="plusSlides()">&#10095;</a>
+        </div>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+      </header>
+      <main>
+       <section style="width:220px; margin-top: 25px;" class="sidebar">
+        <div class="p-1">
+           <h2>Mẫu Thiết Kế Mới</h2>
+       <ul class="side-1">
+           <li><a href="#">Văn Phòng</a></li>
+           <li><a href="#">Phòng Khách</a></li>
+           <li><a href="#">Phòng Ngủ</a></li>
+           <li><a href="#">Phòng Sách</a></li>
+           <li><a href="#">Nhà Vườn</a></li>
+       </ul>
+       </div>
+       <div class="p-1">
+            <h2>Nội Thất Cao Cấp</h2>
+        <ul class="side-1">
+            <li><a href="#">Sofa nệm da</a></li>
+            <li><a href="#">Tủ Bếp</a></li>
+            <li><a href="#">Giường</a></li>
+            <li><a href="#">Đèn Trang Trí</a></li>
+            <li><a href="#">Bàn Ăn</a></li>
+            <li><a href="#">Rèm Cửa Cao Cấp</a></li>
+        </ul>
+        </div>
+       </section>
+       <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+       </div>
+
+      </main>
+      <footer style="background-color: black; color:white">
+          <div class="one" >
+              <P>VTN Furniture</P>
+              <P>140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Hồ Chí Minh</P>
+              <p>Điện thoại: 070319XXXX</p>
+          </div>
+          <div class="two" style="width: 220px">
+              <img src="images//twit.png">
+              <img src="images//f.png">
+              <img src="images//g.png">
+          </div>
+      </footer>
+    </div>
+
+
+    </form>
+    <script src="SlideShow.js"></script>
+</body>
+</html>
