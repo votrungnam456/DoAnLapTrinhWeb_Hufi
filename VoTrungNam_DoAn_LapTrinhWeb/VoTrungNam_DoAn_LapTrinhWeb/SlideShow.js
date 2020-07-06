@@ -30,4 +30,4 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
 }
-    setInterval(plusSlides, 5000);
+    setInterval(plusSlides, 10000);

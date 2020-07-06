@@ -5,7 +5,7 @@
     padding: 0;
 }
 .container{
-    width: 960px;
+    width: 1000px;
      height: 1553px;
    
      margin: auto;
@@ -18,14 +18,16 @@
 .logo span
 {
     /*margin-left:27%;*/
-    font-size:28px;
-    color:green;
-    
+    color:green;  
 }
+    .logo i
+    {
+         font-size:33px;
+    }
 
 nav{
     display: flex;
-  
+    margin:10px 0px 10px 0px;
    
 }
 .navi{

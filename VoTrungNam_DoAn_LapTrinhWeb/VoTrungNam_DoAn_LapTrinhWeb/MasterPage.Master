@@ -8,7 +8,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Demo</title>
-    <link rel="stylesheet" href="MasterPage2.css">
+    <link rel="stylesheet" href="MasterPage3.css">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -20,14 +20,14 @@
               <table>
                   <tr >
                       <td><img class="logo" style="width:100px;height:80px" src="images/logo.png"/></td>
-                      <td style="text-align:center"><span>VTN Furniture nơi cung cấp sản phẩm chất lượng hàng đầu</span></td>
+                      <td style="text-align:center"><i><span>VTN Furniture nơi cung cấp sản phẩm chất lượng hàng đầu</span></i></td>
                   </tr>
               </table>
                
               
           </div>
          
-          <nav style="width:960px;">          
+          <nav style="width:100%;">          
           <div  class="navi">
             <a class="key" style="color: red" href="#">TRANG CHỦ</a>
             <a href="#">GIỚI THIỆU</a>
@@ -60,12 +60,12 @@
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="images/NoiThatSlideShow.jpg">
+                    <img src="images/NoiThatSlideShow2.jpg">
                     <!-- <div class="text">Caption Two</div> -->
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="images/NoiThatSlideShow.jpg">
+                    <img src="images/NoiThatSlideShow3.jpg">
                     <!-- <div class="text">Caption Three</div> -->
                 </div>
                 <a class="prev" onclick="minusSlides()">&#10094;</a>
