@@ -57,7 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MasterPage3.css" />
+    <Content Include="MasterPage4.css" />
     <Content Include="SlideShow.js" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />

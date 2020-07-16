@@ -60,6 +60,9 @@
                                  <P>GF Interior design tự hào mang đến hàng loạt các thiết kế công trình văn phòng xuất sắc tại Việt Nam.</P>
                                  <button>Chi Tiết</button>
                          </div>
-                    </div>
+                    </div>           
     </section>
+    <div class="more-btn">
+        <button>Xem thêm</button>
+    </div>
 </asp:Content>
