@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Chitietsanpham.master.cs" Inherits="VoTrungNam_DoAn_LapTrinhWeb.Chitietsanpham" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="MasterPage4.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+      <header >
+          <div style="background-image:linear-gradient(white,red)" class="logo">
+              <table>
+                  <tr >
+                      <td><img class="logo" style="width:100px;height:80px" src="images/logo.png"/></td>
+                      <td style="text-align:center"><i><span>VTN Furniture nơi cung cấp sản phẩm chất lượng hàng đầu</span></i></td>
+                      <td>
+                          <asp:Image ID="Image1" runat="server" ImageUrl="../images/icon-user.png" Height="43px" Width="64px"/>
+                          <p><a href="#" style="text-decoration:none;color:white">Đăng nhập</a></p>
+                      </td>
+                  </tr>
+              </table>
+            
+          </div>
+         
+          <nav style="width:100%;">          
+          <div  class="navi">
+            <a class="key" style="color: red" href="Home.aspx">TRANG CHỦ</a>
+            <a href="#">GIỚI THIỆU</a>
+            <a href="#">TIN TỨC</a>
+            <a class="sanpham" href="#">SẢN PHẨM</a>
+<%--            <div id="menu-sanpham">
+                <div class="menu-column">
+                    <h3>Nội thất nhà ở</h3>
+                    <ul>
+                        <li><a>Tủ</a></li>
+                        <li><a>Bàn</a></li>
+                        <li><a>Ghế</a></li>
+                    </ul>
+                </div>
+                <div id="Div1">
+                    <h3>Nội thất nhà ở</h3>
+                    <ul>
+                        <li><a>Tủ</a></li>
+                        <li><a>Bàn</a></li>
+                        <li><a>Ghế</a></li>
+                    </ul>
+                </div>
+            </div>    --%>            
+            <a href="#">LIÊN HỆ</a>
+          </nav>
+
+      </header>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+
+</html>

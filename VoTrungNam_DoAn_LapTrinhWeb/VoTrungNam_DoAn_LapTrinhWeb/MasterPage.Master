@@ -8,22 +8,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Demo</title>
-    <link rel="stylesheet" href="MasterPage4.css">
+    <link rel="stylesheet" href="MasterPage6.css">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-<div class="container">
+<div id="load" class="container">
       <header >
           <div style="background-image:linear-gradient(white,red)" class="logo">
               <table>
                   <tr >
-                      <td><img class="logo" style="width:100px;height:80px" src="images/logo.png"/></td>
+                      <td><img class="logo" style="width:100px;height:80px" src="./images/logo.png"/></td>
                       <td style="text-align:center"><i><span>VTN Furniture nơi cung cấp sản phẩm chất lượng hàng đầu</span></i></td>
                       <td>
-                          <asp:Image ID="Image1" runat="server" ImageUrl="../images/icon-user.png" Height="43px" Width="64px"/>
-                          <p><a href="#" style="text-decoration:none;color:white">Đăng nhập</a></p>
+                          <asp:Image ID="Image1" runat="server" ImageUrl="./images/icon-user.png" Height="43px" Width="64px"/>
+                          <p><a href="signin.html" style="text-decoration:none;color:white">Đăng nhập</a></p>
                       </td>
                   </tr>
               </table>
@@ -32,28 +32,10 @@
          
           <nav style="width:100%;">          
           <div  class="navi">
-            <a class="key" style="color: red" href="#">TRANG CHỦ</a>
+            <a class="key" style="color: red" href="Home.aspx">TRANG CHỦ</a>
             <a href="#">GIỚI THIỆU</a>
             <a href="#">TIN TỨC</a>
-            <a class="sanpham" href="#">SẢN PHẨM</a>
-<%--            <div id="menu-sanpham">
-                <div class="menu-column">
-                    <h3>Nội thất nhà ở</h3>
-                    <ul>
-                        <li><a>Tủ</a></li>
-                        <li><a>Bàn</a></li>
-                        <li><a>Ghế</a></li>
-                    </ul>
-                </div>
-                <div id="Div1">
-                    <h3>Nội thất nhà ở</h3>
-                    <ul>
-                        <li><a>Tủ</a></li>
-                        <li><a>Bàn</a></li>
-                        <li><a>Ghế</a></li>
-                    </ul>
-                </div>
-            </div>    --%>            
+            <a class="sanpham" href="#">SẢN PHẨM</a>           
             <a href="#">LIÊN HỆ</a>
           </nav>
            <div class="slideshow-container">
@@ -85,22 +67,22 @@
         <div class="p-1">
            <h2>Mẫu Thiết Kế Mới</h2>
        <ul class="side-1">
-           <li><a href="#">Văn Phòng</a></li>
-           <li><a href="#">Phòng Khách</a></li>
-           <li><a href="#">Phòng Ngủ</a></li>
-           <li><a href="#">Phòng Sách</a></li>
-           <li><a href="#">Nhà Vườn</a></li>
+           <li><a id="vanphong" href="#">Văn Phòng</a></li>
+           <li><a id="phongkhach" href="#">Phòng Khách</a></li>
+           <li><a id="phongngu" href="#">Phòng Ngủ</a></li>
+           <li><a id="phongsach" href="#">Phòng Sách</a></li>
+           <li><a id="nhavuon" href="#">Nhà Vườn</a></li>
        </ul>
        </div>
        <div class="p-1">
             <h2>Nội Thất Cao Cấp</h2>
         <ul class="side-1">
-            <li><a href="#">Sofa nệm da</a></li>
-            <li><a href="#">Tủ Bếp</a></li>
-            <li><a href="#">Giường</a></li>
-            <li><a href="#">Đèn Trang Trí</a></li>
-            <li><a href="#">Bàn Ăn</a></li>
-            <li><a href="#">Rèm Cửa Cao Cấp</a></li>
+            <li><a id="sofa" href="#">Sofa nệm da</a></li>
+            <li><a id="tubep" href="#">Tủ Bếp</a></li>
+            <li><a id="giuong" href="#">Giường</a></li>
+            <li><a id="dentrangtri" href="#">Đèn Trang Trí</a></li>
+            <li><a id="banan" href="#">Bàn Ăn</a></li>
+            <li><a id="remcua" href="#">Rèm Cửa Cao Cấp</a></li>
         </ul>
         </div>
        </section>
@@ -128,5 +110,8 @@
 
     </form>
     <script src="SlideShow.js"></script>
+    <script  src="loadHomePage.js"></script>
+     <%--<script  src="test.js"></script>--%>
+
 </body>
 </html>

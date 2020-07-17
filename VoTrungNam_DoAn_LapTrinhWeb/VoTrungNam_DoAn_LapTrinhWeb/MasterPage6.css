@@ -140,7 +140,7 @@ footer{
    margin-left: 15px;
 }
 
-button{
+.button-s{
     margin-left: 158px;
     background-color: red;
     color: white;
@@ -160,30 +160,28 @@ button{
 {
     margin:10px 0px 10px 30%;
 }
-/*.sanpham
-{
-    position: relative;
-}
-#menu-sanpham
-{
-    background-color:white;
-    position: absolute;
-    display:flex;
-    min-width:25%;
-}
-#menu-sanpham ul li
-{
-    list-style: none;
-        padding-top: 15px;
-    padding-bottom: 15px;
-}
-.menu-column
-{
-    min-width:200px;
 
-    padding-left:15px;
-    border:1px solid ;
-}*/
+
+.hinhsp{
+    width: 300px;
+    height: 200px;
+}
+.tensp{
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+.motasp{
+    font-size: 18px;
+    font-weight: bold;
+}
+.giasp
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
 .mySlides {
     display: none;
 }

@@ -57,12 +57,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MasterPage4.css" />
-    <Content Include="SlideShow.js" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
+    <Content Include="contentPageChiTiet.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chitietsanpham.Master.cs">
+      <DependentUpon>Chitietsanpham.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chitietsanpham.Master.designer.cs">
+      <DependentUpon>Chitietsanpham.Master</DependentUpon>
+    </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -78,9 +84,17 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="contentPageChiTiet.aspx.cs">
+      <DependentUpon>contentPageChiTiet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contentPageChiTiet.aspx.designer.cs">
+      <DependentUpon>contentPageChiTiet.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage.Master" />
+    <Content Include="Chitietsanpham.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
