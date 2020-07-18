@@ -23,7 +23,7 @@
                       <td style="text-align:center"><i><span>VTN Furniture nơi cung cấp sản phẩm chất lượng hàng đầu</span></i></td>
                       <td>
                           <asp:Image ID="Image1" runat="server" ImageUrl="./images/icon-user.png" Height="43px" Width="64px"/>
-                          <p><a href="signin.html" style="text-decoration:none;color:white">Đăng nhập</a></p>
+                          <p><a id="userP" href="signin.html" style="text-decoration:none;color:white">Đăng nhập</a></p>
                       </td>
                   </tr>
               </table>
@@ -112,6 +112,5 @@
     <script src="SlideShow.js"></script>
     <script  src="loadHomePage.js"></script>
      <%--<script  src="test.js"></script>--%>
-
 </body>
 </html>

@@ -6,7 +6,7 @@
 //     users = await getdata.json()
 // }
 // getData("https://5ed1024f4e6d7200163a045c.mockapi.io/api/c4e/users");
-
+try{
 let submit = document.getElementById("btn-submit")
 submit.addEventListener('click',async ()=>{
   // let checkwrg = document.getElementById("form-login")
@@ -27,6 +27,7 @@ submit.addEventListener('click',async ()=>{
           error.style.display="block";
         }
         else{
+          let user = sessionStorage.setItem(userLogin.username)
           alert('Đăng nhập thành công')
           window.open('Home.aspx','_self')
         }
@@ -52,3 +53,6 @@ unCheckError2.addEventListener('click', ()=>{
   let error = document.getElementById("err")
   error.style.display="none";
 })
+}catch(err){
+
+}

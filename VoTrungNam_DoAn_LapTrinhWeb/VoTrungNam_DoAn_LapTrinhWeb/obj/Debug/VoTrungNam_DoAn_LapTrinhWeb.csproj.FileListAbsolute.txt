@@ -1,4 +1,5 @@
 C:\Users\USER\Documents\School\Đồ án\LapTrinhWeb\DoAnLapTrinhWeb_Hufi\VoTrungNam_DoAn_LapTrinhWeb\VoTrungNam_DoAn_LapTrinhWeb\bin\VoTrungNam_DoAn_LapTrinhWeb.dll
 C:\Users\USER\Documents\School\Đồ án\LapTrinhWeb\DoAnLapTrinhWeb_Hufi\VoTrungNam_DoAn_LapTrinhWeb\VoTrungNam_DoAn_LapTrinhWeb\bin\VoTrungNam_DoAn_LapTrinhWeb.pdb
+C:\Users\USER\Documents\School\Đồ án\LapTrinhWeb\DoAnLapTrinhWeb_Hufi\VoTrungNam_DoAn_LapTrinhWeb\VoTrungNam_DoAn_LapTrinhWeb\obj\Debug\VoTrungNam_DoAn_LapTrinhWeb.csprojResolveAssemblyReference.cache
 C:\Users\USER\Documents\School\Đồ án\LapTrinhWeb\DoAnLapTrinhWeb_Hufi\VoTrungNam_DoAn_LapTrinhWeb\VoTrungNam_DoAn_LapTrinhWeb\obj\Debug\VoTrungNam_DoAn_LapTrinhWeb.dll
 C:\Users\USER\Documents\School\Đồ án\LapTrinhWeb\DoAnLapTrinhWeb_Hufi\VoTrungNam_DoAn_LapTrinhWeb\VoTrungNam_DoAn_LapTrinhWeb\obj\Debug\VoTrungNam_DoAn_LapTrinhWeb.pdb

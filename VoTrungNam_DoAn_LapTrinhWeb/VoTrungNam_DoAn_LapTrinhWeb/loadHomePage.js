@@ -106,8 +106,19 @@ count++;
 // body.addEventListener("load",loadHomepage())
 loadHomepage();
 // let object;
+if(sessionStorage.getItem("user")== undefined){
+   
+}else
+{
+    let userPr = document.getElementById("userP")
+    userPr.textContent=sessionStorage.getItem("user")
+}
 function getcontent_homepage(string){
-    
+    let back_btn = document.createElement("input");
+    back_btn.setAttribute("class","button-s")
+    back_btn.setAttribute("type","button")
+    back_btn.setAttribute("value","Quay lại")
+    back_btn.setAttribute("onclick","loadHomepage()")
     for(let i = 0 ; i < SPTrangChu.length ; i++){
         if(SPTrangChu[i].ten == string){
             object=SPTrangChu[i];

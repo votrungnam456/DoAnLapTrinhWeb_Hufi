@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="signin.js" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
     <Content Include="contentPageChiTiet.aspx" />
