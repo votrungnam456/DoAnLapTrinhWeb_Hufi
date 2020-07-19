@@ -63,7 +63,7 @@
                          </div>
                     </div>           --%>
     </section>
-    <div class="more-btn">
+<%--    <div class="more-btn">
         <button>Xem thêm</button>
-    </div>
+    </div>--%>
 </asp:Content>

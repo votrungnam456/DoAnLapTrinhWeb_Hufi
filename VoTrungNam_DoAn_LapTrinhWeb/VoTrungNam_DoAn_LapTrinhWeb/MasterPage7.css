@@ -1,6 +1,6 @@
 ﻿body{
     
- height:1553px;
+ /*height:1553px;*/
     margin: 0;
     padding: 0;
 }
@@ -92,7 +92,10 @@ main a
     }
 .main{
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 55px;
+    margin-left: 3%;
 }
 
 
@@ -140,21 +143,27 @@ footer{
    margin-left: 15px;
 }
 
-.button-s{
+.button-s, button{
     margin-left: 158px;
     background-color: red;
     color: white;
     padding: 7px;
     border: none;
 }
-.para-2{
+/*.para-2{
     margin-top: 40px;
 }
 .para-3{
     margin-top: 10px;
+}*/
+.para p
+{
+    text-align:center;
+
 }
 .id{
     color:red;
+    text-align:center;
 }
 .more-btn
 {

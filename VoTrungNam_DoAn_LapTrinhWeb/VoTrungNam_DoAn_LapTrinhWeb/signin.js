@@ -15,9 +15,6 @@ submit.addEventListener('click',async ()=>{
       username : document.getElementById("txtUser").value,
       password : document.getElementById("txtPwd").value
     }
-
-  console.log(userLogin.username)
-  console.log(userLogin.password)
   
   if (userLogin.username && userLogin.password) {
       try {
@@ -27,7 +24,7 @@ submit.addEventListener('click',async ()=>{
           error.style.display="block";
         }
         else{
-          let user = sessionStorage.setItem(userLogin.username)
+          sessionStorage.setItem("userPrs",userLogin.username)
           alert('Đăng nhập thành công')
           window.open('Home.aspx','_self')
         }
