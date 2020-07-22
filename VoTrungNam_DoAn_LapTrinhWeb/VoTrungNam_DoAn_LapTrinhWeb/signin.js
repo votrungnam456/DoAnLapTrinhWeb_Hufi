@@ -15,7 +15,8 @@ submit.addEventListener('click',async ()=>{
       username : document.getElementById("txtUser").value,
       password : document.getElementById("txtPwd").value
     }
-  
+console.log(userLogin.username)
+console.log(userLogin.password)
   if (userLogin.username && userLogin.password) {
       try {
         const loginResult = await firebase.auth().signInWithEmailAndPassword(userLogin.username, userLogin.password);

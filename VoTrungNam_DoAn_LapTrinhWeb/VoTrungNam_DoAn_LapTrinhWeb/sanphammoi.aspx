@@ -1,20 +1,16 @@
-﻿
-
-
-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="VoTrungNam_DoAn_LapTrinhWeb.MasterPAge" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="sanphammoi.aspx.cs" Inherits="VoTrungNam_DoAn_LapTrinhWeb.sanphammoi" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>VTN Furniture - Trang chủ</title>
-    <link rel="stylesheet" href="MasterPage7.css">
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <title>VTN Furniture - Sản phẩm mới</title>
+    <meta charset="utf-8" />
+     <link rel="stylesheet" href="MasterPage7.css">
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="load" class="container">
+ <div id="load" class="container">
       <header >
           <div style="background-image:linear-gradient(white,red)" class="logo">
               <table>
@@ -36,10 +32,10 @@
          
           <nav style="width:100%;">          
           <div  class="navi">
-            <a class="key" style="color: red" href="Home.aspx">TRANG CHỦ</a>
+            <a  href="Home.aspx">TRANG CHỦ</a>
             <a href="gioithieu.aspx">GIỚI THIỆU</a>
             <a href="#">TIN TỨC</a>
-            <a class="sanpham" href="sanphammoi.aspx">SẢN PHẨM MỚI</a>           
+            <a class="key" style="color: red" href="sanphammoi.aspx">SẢN PHẨM MỚI</a>           
             <a href="#">LIÊN HỆ</a>
           </nav>
            <div class="slideshow-container">
@@ -90,11 +86,37 @@
         </ul>
         </div>
        </section>
-       <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-            </asp:ContentPlaceHolder>
-       </div>
+       <section  id="SPHomePage" class="main" style="width:740px">            
+       <asp:DataList ID="DataList1" runat="server" RepeatColumns ="3">
+            <ItemTemplate>
+                <table id="tbl-datalist" style="text-align:center">
+                    <tr>
+                        <td>
+                            <asp:Image ID="Image3" runat="server" Height="89px" ImageUrl='<%# Eval("HINHANHVP") %>' Width="160px" />                            
+                            <asp:Image CssClass="newicon" ID="Image4" runat="server" Height="32px" ImageUrl="img/newicon.png" Width="38px" />
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("TENSP") %>'></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="id">
+                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("GIACA")+ " đồng" %>'></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button CssClass="button-s" ID="Button1" runat="server" Text="Chi tiết" CommandName="ViewDetail" CommandArgument='<%# Eval("ID") %>' />
+                        </td>
+                    </tr>
+                </table>                                     
+            </ItemTemplate>
+        </asp:DataList>
+    </section>
       </main>
 
       <footer style="background-color: black; color:white">
@@ -114,7 +136,6 @@
 
     </form>
     <script src="SlideShow.js"></script>
-    <%--<script  src="loadHomePage.js"></script>--%>
-     <%--<script  src="test.js"></script>--%>
+    </form>
 </body>
 </html>

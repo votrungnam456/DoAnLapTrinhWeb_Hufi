@@ -11,7 +11,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container">
+    <div class="container">
       <header >
           <div style="background-image:linear-gradient(white,red)" class="logo">
               <table>
@@ -32,7 +32,7 @@
             <a href="Home.aspx">TRANG CHỦ</a>
             <a class="key" style="color: red" href="gioithieu.aspx">GIỚI THIỆU</a>
             <a href="#">TIN TỨC</a>
-            <a class="sanpham" href="#">SẢN PHẨM MỚI</a>
+            <a class="sanpham" href="sanphammoi.aspx">SẢN PHẨM MỚI</a>
 <%--            <div id="menu-sanpham">
                 <div class="menu-column">
                     <h3>Nội thất nhà ở</h3>

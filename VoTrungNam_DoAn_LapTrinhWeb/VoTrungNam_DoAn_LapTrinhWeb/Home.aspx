@@ -2,66 +2,33 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section  id="SPHomePage" class="main" style="width:740px">           
-        <%-- <div class="sec">
-                   <div class="para">
-                       <img src="images/san_pham_8.jpg">
-                       <h3> TKPK 001</h3>
-                       <P>Mẫu thiết kế phòng khách cho căn hộ mẫu PenHouse</P>
-                       <input type="button" Title=""
-
-                   </div>
-                   <div class="para">
-                        <img src="images/san_pham_8.jpg">
-                        <h3 class="id">SFDO234</h3>
-                        <P>GF Interior design tự hào mang đến hàng loạt các thiết kế công trình văn phòng xuất sắc tại Việt Nam.</P>
-                        <button>Chi Tiết</button>
-                    </div>
-                    <div class="para">
-                            <img src="images/san_pham_8.jpg">
-                            <h3 class="id">SFDO234</h3>
-                            <P>GF Interior design tự hào mang đến hàng loạt các thiết kế công trình văn phòng xuất sắc tại Việt Nam.</P>
-                            <button>Chi Tiết</button>
-                    </div>
-               </div>
-               <div class="sec">
-                    <div class="para">
-                        <img src="images/san_pham_8.jpg">
-                        <h3> TKPK 001</h3>
-                        <P>Mẫu thiết kế phòng khách cho căn hộ mẫu PenHouse</P>
-                    </div>
-                    <div class="para">
-                         <img src="images/san_pham_8.jpg">
-                         <h3 class="id">SFDO234</h3>
-                         <P>GF Interior design tự hào mang đến hàng loạt các thiết kế công trình văn phòng xuất sắc tại Việt Nam.</P>
-                         <button>Chi Tiết</button>
-                     </div>
-                     <div class="para">
-                             <img src="images/san_pham_8.jpg">
-                             <h3  class="id">SFDO234</h3>
-                             <P>GF Interior design tự hào mang đến hàng loạt các thiết kế công trình văn phòng xuất sắc tại Việt Nam.</P>
-                             <button>Chi Tiết</button>
-                     </div>
-                </div>
-                <div class="sec">
-                        <div class="para">
-                            <img src="images/san_pham_8.jpg">
-                            <h3> TKPK 001</h3>
-                            <P>Mẫu thiết kế phòng khách cho căn hộ mẫu PenHouse</P>
-                        </div>
-                        <div class="para">
-                             <img src="images/san_pham_8.jpg">
-                             <h3 class="id">SFDO234</h3>
-                             <P>GF Interior design tự hào mang đến hàng loạt các thiết kế công trình văn phòng xuất sắc tại Việt Nam.</P>
-                             <button>Chi Tiết</button>
-                         </div>
-                         <div class="para">
-                                 <img src="images/san_pham_8.jpg">
-                                 <h3 class="id">SFDO234</h3>
-                                 <P>GF Interior design tự hào mang đến hàng loạt các thiết kế công trình văn phòng xuất sắc tại Việt Nam.</P>
-                                 <button>Chi Tiết</button>
-                         </div>
-                    </div>           --%>
+    <section  id="SPHomePage" class="main" style="width:740px">            
+       <asp:DataList ID="DataList1" runat="server" RepeatColumns ="3" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
+            <ItemTemplate>
+                <table id="tbl-datalist" style="text-align:center">
+                    <tr>
+                        <td>
+                            <asp:Image ID="Image3" runat="server" Height="89px" ImageUrl='<%# Eval("HINHANHVP") %>' Width="160px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("TENSP") %>'></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="id">
+                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("GIACA")+ " đồng" %>'></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button CssClass="button-s" ID="Button1" runat="server" Text="Chi tiết" CommandName="View Detail" CommandArgument='<%# Eval("ID") %>' />
+                        </td>
+                    </tr>
+                </table>                                     
+            </ItemTemplate>
+        </asp:DataList>
     </section>
 <%--    <div class="more-btn">
         <button>Xem thêm</button>
