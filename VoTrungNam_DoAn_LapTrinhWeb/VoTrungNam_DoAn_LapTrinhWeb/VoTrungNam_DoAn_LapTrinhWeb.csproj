@@ -58,13 +58,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChiTietSanPham.aspx" />
+    <Content Include="ChiTietSanPham.css" />
+    <Content Include="GioHang.aspx" />
     <Content Include="loadHomePage.js" />
     <Content Include="MasterPage7.css" />
     <Content Include="sanphammoi.aspx" />
     <Content Include="signin.css" />
     <Content Include="signin.html" />
     <Content Include="signin.js" />
-    <Content Include="Web.config" />
+    <Content Include="signup.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Home.aspx" />
     <Content Include="gioithieu.aspx" />
   </ItemGroup>
@@ -75,6 +80,13 @@
     </Compile>
     <Compile Include="ChiTietSanPham.aspx.designer.cs">
       <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GioHang.aspx.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GioHang.aspx.designer.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
     </Compile>
     <Compile Include="GioiThieu.Master.cs">
       <DependentUpon>GioiThieu.Master</DependentUpon>

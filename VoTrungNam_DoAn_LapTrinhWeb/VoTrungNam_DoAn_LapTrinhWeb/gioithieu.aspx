@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="width: 75%;margin-left: 10%;font-size: 18px;font-family:'Times New Roman'">
+    <div class="container-another-page">
         <p>
             VTN Furniture là thương hiệu nội-ngoại thất trực thuộc HUFI Univer. 
             VTN Furniture có hơn 13 năm kinh nghiệm thiết kế, sản xuất, xuất khẩu sang các thị trường khó tính như Châu Âu, Mỹ, 

@@ -1,0 +1,12 @@
+﻿
+.Detail_Name,.Detail_Price
+{
+    color:red;
+    font-weight:bold;
+    font-size:20px;
+}
+.Detail_Price
+{
+    font-size:30px !important;
+   
+}

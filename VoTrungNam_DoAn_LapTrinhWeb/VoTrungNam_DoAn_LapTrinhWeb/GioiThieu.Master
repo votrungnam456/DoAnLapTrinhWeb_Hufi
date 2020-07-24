@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>VTN Furniture - Giới Thiệu</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="MasterPage7.css">
@@ -16,11 +16,15 @@
           <div style="background-image:linear-gradient(white,red)" class="logo">
               <table>
                   <tr >
-                      <td><img class="logo" style="width:100px;height:80px" src="images/logo.png"/></td>
+                      <td><img class="logo" style="width:100px;height:80px" src="./images/logo.png"/></td>
                       <td style="text-align:center"><i><span>VTN Furniture nơi cung cấp sản phẩm chất lượng hàng đầu</span></i></td>
                       <td>
-                          <asp:Image ID="Image1" runat="server" ImageUrl="../images/icon-user.png" Height="43px" Width="64px"/>
-                          <p><a href="#" style="text-decoration:none;color:white">Đăng nhập</a></p>
+                          <asp:Image ID="Image1" runat="server" ImageUrl="./images/icon-user.png" Height="43px" Width="64px"/>
+                          <p><a id="userP" href="signin.html" style="text-decoration:none;color:white">Đăng nhập</a></p>
+                      </td>
+                      <td style="padding-left:3%;width:200px">
+                          <asp:Image ID="Image2" runat="server" ImageUrl="./images/GioHang.jpg" Height="43px" Width="64px"/>
+                          <p><a id="A1" href="#" style="text-decoration:none;color:white">Giỏ hàng</a></p>
                       </td>
                   </tr>
               </table>
@@ -96,6 +100,7 @@
       </footer>
     </form>
     <script src="SlideShow.js"></script>
+    <script  src="loadHomePage.js"></script>
 </body>
 
 </html>

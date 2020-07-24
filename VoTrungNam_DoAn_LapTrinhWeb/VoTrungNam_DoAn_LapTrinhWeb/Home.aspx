@@ -2,13 +2,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section  id="SPHomePage" class="main" style="width:740px">            
-       <asp:DataList ID="DataList1" runat="server" RepeatColumns ="3" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
+    <section  id="SPHomePage" class="main" style="width:740px;min-height:630px">            
+       <asp:DataList CssClass="td"  ID="DataList1" runat="server" RepeatColumns ="3" OnItemCommand="DataList1_ItemCommand">
             <ItemTemplate>
                 <table id="tbl-datalist" style="text-align:center">
                     <tr>
                         <td>
-                            <asp:Image ID="Image3" runat="server" Height="89px" ImageUrl='<%# Eval("HINHANHVP") %>' Width="160px" />
+                            <asp:Image ID="Image3" runat="server" Height="110px" ImageUrl='<%# Eval("HINHANHVP") %>' Width="183px" />
                         </td>
                     </tr>
                     <tr>
@@ -18,18 +18,28 @@
                     </tr>
                     <tr>
                         <td class="id">
-                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("GIACA")+ " đồng" %>'></asp:Label>
+                            <asp:Label ID="Label2" runat="server" Text='<%# string.Format("{0:N0}", Eval("GIACA"))+ " đồng" %>'></asp:Label>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <asp:Button CssClass="button-s" ID="Button1" runat="server" Text="Chi tiết" CommandName="View Detail" CommandArgument='<%# Eval("ID") %>' />
+                            <button class="button-s"><a href='ChiTietSanPham.aspx?ID=<%# Eval("ID") %>'>Chi tiết</a></button>
                         </td>
                     </tr>
                 </table>                                     
             </ItemTemplate>
         </asp:DataList>
+
     </section>
+    <div style="margin-left:50%">
+        <table>
+            <tr>
+                <td>
+                    <asp:Button CssClass="nut-bam" ID="Button2" runat="server" Text="Xem Thêm" OnClick="Button2_Click" />
+                </td>
+            </tr>
+        </table>
+    </div>
 <%--    <div class="more-btn">
         <button>Xem thêm</button>
     </div>--%>

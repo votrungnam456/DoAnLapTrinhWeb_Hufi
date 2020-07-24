@@ -87,13 +87,13 @@
         </div>
        </section>
        <section  id="SPHomePage" class="main" style="width:740px">            
-       <asp:DataList ID="DataList1" runat="server" RepeatColumns ="3">
+       <asp:DataList CssClass="td" ID="DataList1" runat="server" RepeatColumns ="3">
             <ItemTemplate>
                 <table id="tbl-datalist" style="text-align:center">
                     <tr>
                         <td>
                             <asp:Image ID="Image3" runat="server" Height="89px" ImageUrl='<%# Eval("HINHANHVP") %>' Width="160px" />                            
-                            <asp:Image CssClass="newicon" ID="Image4" runat="server" Height="32px" ImageUrl="img/newicon.png" Width="38px" />
+
                         </td>
                         <td>
                             &nbsp;</td>
@@ -105,12 +105,13 @@
                     </tr>
                     <tr>
                         <td class="id">
-                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("GIACA")+ " đồng" %>'></asp:Label>
+                            <asp:Label ID="Label2" runat="server" Text='<%# string.Format("{0:N0}", Eval("GIACA"))+ " đồng" %>'></asp:Label>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <asp:Button CssClass="button-s" ID="Button1" runat="server" Text="Chi tiết" CommandName="ViewDetail" CommandArgument='<%# Eval("ID") %>' />
+                            <asp:Image  ID="Image4" runat="server" Height="32px" ImageUrl="img/newicon.png" Width="38px" />
+                            <button class="button-s"><a href='ChiTietSanPham.aspx?ID=<%# Eval("ID") %>'>Chi tiết</a></button>
                         </td>
                     </tr>
                 </table>                                     

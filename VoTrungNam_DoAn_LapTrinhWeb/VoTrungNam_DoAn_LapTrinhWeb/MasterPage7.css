@@ -1,8 +1,13 @@
-﻿body{
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+body{
     
  /*height:1553px;*/
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x:hidden;
 }
 .container{
     /*width: 1000px;*/
@@ -144,18 +149,14 @@ footer{
 }
 
 .button-s, button{
-    margin-left: 158px;
+    margin-left: 100px;
     background-color: red;
     color: white;
     padding: 7px;
     border: none;
+
 }
-/*.para-2{
-    margin-top: 40px;
-}
-.para-3{
-    margin-top: 10px;
-}*/
+
 .para p
 {
     text-align:center;
@@ -272,8 +273,21 @@ footer{
     }
 }
 
+/*Icon sản phẩm mới*/
 .newicon
 {
     padding-bottom:50px;
     padding-right:10px;
+}
+/*trang giới thiệu và chi tiết sản phẩm*/
+.container-another-page
+{
+    width: 75%;
+    margin-left: 10%;
+    font-size: 18px;
+    font-family:'Times New Roman'
+}
+.td
+{
+    max-width:300px;
 }

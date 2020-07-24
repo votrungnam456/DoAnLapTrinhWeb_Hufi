@@ -1,20 +1,16 @@
-﻿
-
-
-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="VoTrungNam_DoAn_LapTrinhWeb.MasterPAge" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GioHang.aspx.cs" Inherits="VoTrungNam_DoAn_LapTrinhWeb.GioHang" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>VTN Furniture - Trang chủ</title>
+    <title>VTN Furniture - Giỏ Hàng</title>
     <link rel="stylesheet" href="MasterPage7.css">
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
 </head>
 <body>
+<body>
     <form id="form1" runat="server">
-    <div id="load" class="container">
+    <div class="container">
       <header >
           <div style="background-image:linear-gradient(white,red)" class="logo">
               <table>
@@ -36,26 +32,23 @@
          
           <nav style="width:100%;">          
           <div  class="navi">
-            <a class="key" style="color: red" href="Home.aspx">TRANG CHỦ</a>
+            <a href="Home.aspx">TRANG CHỦ</a>
             <a href="gioithieu.aspx">GIỚI THIỆU</a>
             <a href="#">TIN TỨC</a>
-            <a class="sanpham" href="sanphammoi.aspx">SẢN PHẨM MỚI</a>           
+            <a class="sanpham" href="sanphammoi.aspx">SẢN PHẨM MỚI</a>       
             <a href="#">LIÊN HỆ</a>
           </nav>
-           <div class="slideshow-container">
+          <div class="slideshow-container">
                 <div class="mySlides fade">
                     <img src="images/NoiThatSlideShow.jpg">
-                    <!-- <div class="text">Caption Text</div> -->
                 </div>
 
                 <div class="mySlides fade">
                     <img src="images/NoiThatSlideShow2.jpg">
-                    <!-- <div class="text">Caption Two</div> -->
                 </div>
 
                 <div class="mySlides fade">
                     <img src="images/NoiThatSlideShow3.jpg">
-                    <!-- <div class="text">Caption Three</div> -->
                 </div>
                 <a class="prev" onclick="minusSlides()">&#10094;</a>
                 <a class="next" onclick="plusSlides()">&#10095;</a>
@@ -66,38 +59,10 @@
                 <span class="dot"></span>
             </div>
       </header>
-      <main>
-       <section style="width:220px; margin-top: 25px;" class="sidebar">
-        <div class="p-1">
-           <h2>Mẫu Thiết Kế Mới</h2>
-       <ul class="side-1">
-           <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=VP">Văn phòng</asp:HyperLink></li>
-           <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=PK">Phòng Khách</asp:HyperLink></li>
-           <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=PN">Phòng Ngủ</asp:HyperLink></li>
-           <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=PS">Phòng Sách</asp:HyperLink></li>
-           <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=NV">Nhà Vườn</asp:HyperLink></li>
-       </ul>
-       </div>
-       <div class="p-1">
-            <h2>Nội Thất Cao Cấp</h2>
-        <ul class="side-1">
-            <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=SOFA">Sofa nệm da</asp:HyperLink></li>
-            <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=TB">Tủ Bếp</asp:HyperLink></li>
-            <li><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=GIUONG">Giường</asp:HyperLink></li>
-            <li><asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=DENTT">Đèn Trang Trí</asp:HyperLink></li>
-            <li><asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=BANAN">Bàn Ăn</asp:HyperLink></li>
-            <li><asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=REMCUA">Rèm Cửa Cao Cấp</asp:HyperLink></li>
-        </ul>
-        </div>
-       </section>
        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-            </asp:ContentPlaceHolder>
-       </div>
-      </main>
 
-      <footer style="background-color: black; color:white">
+       </div>
+    <footer style="background-color: black; color:white">
           <div class="one" >
               <P>VTN Furniture</P>
               <P>140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Hồ Chí Minh</P>
@@ -109,12 +74,8 @@
               <img src="images//g.png">
           </div>
       </footer>
-    </div>
-
-
     </form>
     <script src="SlideShow.js"></script>
     <script  src="loadHomePage.js"></script>
-     <%--<script  src="test.js"></script>--%>
 </body>
 </html>
