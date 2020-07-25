@@ -1,20 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ChiTietSanPham.aspx.cs" Inherits="VoTrungNam_DoAn_LapTrinhWeb.ChiTietSanPham" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TinTuc.aspx.cs" Inherits="VoTrungNam_DoAn_LapTrinhWeb.TinTuc" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Chi tiết sản phẩm</title>
-    <meta charset="utf-8" />
+    <title>VTN Furniture - Tin Tức</title>
     <link rel="stylesheet" href="MasterPage7.css">
-    <link rel="stylesheet" href="ChiTietSanPham.css">
 </head>
 <body>
-<form id="form1" runat="server">
-    <div class="container">
+    <form id="form1" runat="server">
+    <div id="load" class="container">
       <header >
           <div style="background-image:linear-gradient(white,red)" class="logo">
-             <table>
+              <table>
                   <tr >
                       <td><img class="logo" style="width:100px;height:80px" src="./images/logo.png"/></td>
                       <td style="text-align:center"><i><span>VTN Furniture nơi cung cấp sản phẩm chất lượng hàng đầu</span></i></td>
@@ -33,13 +31,13 @@
          
           <nav style="width:100%;">          
           <div  class="navi">
-            <a href="Home.aspx">TRANG CHỦ</a>
+            <a class="key" style="color: red" href="Home.aspx">TRANG CHỦ</a>
             <a href="gioithieu.aspx">GIỚI THIỆU</a>
-            <a href="TinTuc.aspx">TIN TỨC</a>
-            <a class="sanpham" href="sanphammoi.aspx">SẢN PHẨM MỚI</a>          
+            <a class="sanpham" href="#">TIN TỨC</a>
+            <a href="sanphammoi.aspx">SẢN PHẨM MỚI</a>           
             <a href="#">LIÊN HỆ</a>
           </nav>
-          <div class="slideshow-container">
+           <div class="slideshow-container">
                 <div class="mySlides fade">
                     <img src="images/NoiThatSlideShow.jpg">
                 </div>
@@ -60,61 +58,38 @@
                 <span class="dot"></span>
             </div>
       </header>
-    <div class="container-another-page">
-
-    <asp:DataList ID="DataList1" runat="server">
-        <ItemTemplate>
-            <table>
-                <tr >
-                    <td rowspan ="5" >
-                        <asp:Image ID="Image3" runat="server" Height="298px" ImageUrl='<%# Eval("HINHANHVP") %>' Width="339px" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:Label CssClass="Detail_Name" ID="Label1" runat="server" Text='<%# Eval("TENSP") %>'></asp:Label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("MOTA1") %>'></asp:Label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("MOTA2") %>'></asp:Label>
-                    </td>
-                </tr>
-                <tr>
-                    <td style=" text-align:center">
-                        <asp:Label CssClass="Detail_Price" ID="Label2" runat="server" Text='<%# string.Format("{0:N0}", Eval("GIACA"))+ " đồng" %>'></asp:Label>
-                    </td>
-                </tr>
-            </table>          
-        </ItemTemplate>       
-    </asp:DataList>
-    <div style=" text-align:right">
-        <asp:Button CssClass="button-s" ID="Button1" runat="server" Text="Thêm vào giỏ hàng" OnClick="Button1_Click" />
-    </div>
-    </div>
-    <div class="container-another-page">
-        <h2>Sản phẩm đề nghị</h2>
-        <asp:DataList ID="DataList2" runat="server" RepeatColumns="5">
+        <div style="text-align:center">
+            <h1>Tin Tức</h1>
+        </div>
+       <div style="margin:0 20% 0 20%">
+        <asp:DataList ID="DataList1" runat="server">
             <ItemTemplate>
-                <table  style="text-align:center">
+                <table>
                     <tr>
-                        <td style="text-align:center"><asp:Image ID="Image4" runat="server" Height="119px" Width="154px" ImageUrl='<%# Eval("HINHANHVP") %>' /></td>
+                        <td rowspan="4">
+                            <asp:Image ID="Image3" runat="server" Height="239px" ImageUrl='<%# Eval("hinhanh") %>' Width="226px" />
+                        </td>
                     </tr>
                     <tr>
                         <td>
-                            <a href='ChiTietSanPham.aspx?ID=<%# Eval("ID") %>'><asp:Label ID="Label5" runat="server" Text='<%# Eval("TENSP") %>'></asp:Label> </a>
+                            <asp:Label CssClass="tensp" ID="Label1" runat="server" Text='<%# Eval("tieude") %>'></asp:Label>
                         </td>
                     </tr>
-                </table>
+                    <tr>
+                        <td>
+                            <asp:Label CssClass="motasp" ID="Label2" runat="server" Text='<%# Eval("thongtin") %>'></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right">
+                            <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl='<%# Eval("link") %>'>Đọc thêm</asp:HyperLink>
+                        </td>
+                    </tr>
+                </table>                                                            
             </ItemTemplate>
-        </asp:DataList>
-    </div>
-    <footer style="background-color: black; color:white">
+           </asp:DataList>
+       </div>
+      <footer style="background-color: black; color:white">
           <div class="one" >
               <P>VTN Furniture</P>
               <P>140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Hồ Chí Minh</P>
@@ -126,6 +101,9 @@
               <img src="images//g.png">
           </div>
       </footer>
+    </div>
+
+
     </form>
     <script src="SlideShow.js"></script>
     <script  src="loadHomePage.js"></script>

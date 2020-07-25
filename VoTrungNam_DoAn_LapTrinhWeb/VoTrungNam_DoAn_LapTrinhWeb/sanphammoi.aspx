@@ -34,7 +34,7 @@
           <div  class="navi">
             <a  href="Home.aspx">TRANG CHỦ</a>
             <a href="gioithieu.aspx">GIỚI THIỆU</a>
-            <a href="#">TIN TỨC</a>
+            <a href="TinTuc.aspx">TIN TỨC</a>
             <a class="key" style="color: red" href="sanphammoi.aspx">SẢN PHẨM MỚI</a>           
             <a href="#">LIÊN HỆ</a>
           </nav>
@@ -62,10 +62,11 @@
                 <span class="dot"></span>
             </div>
       </header>
+      <h1 style="text-align:center">Sản phẩm mới</h1>
       <main>
        <section style="width:220px; margin-top: 25px;" class="sidebar">
         <div class="p-1">
-           <h2>Mẫu Thiết Kế Mới</h2>
+           <h2>Thiết kế nội thất</h2>
        <ul class="side-1">
            <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=VP">Văn phòng</asp:HyperLink></li>
            <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=PK">Phòng Khách</asp:HyperLink></li>
@@ -87,7 +88,7 @@
         </div>
        </section>
        <section  id="SPHomePage" class="main" style="width:740px">            
-       <asp:DataList CssClass="td" ID="DataList1" runat="server" RepeatColumns ="3">
+           <asp:DataList CssClass="td" ID="DataList1" runat="server" RepeatColumns ="3">
             <ItemTemplate>
                 <table id="tbl-datalist" style="text-align:center">
                     <tr>

@@ -67,6 +67,7 @@
     <Content Include="signin.html" />
     <Content Include="signin.js" />
     <Content Include="signup.js" />
+    <Content Include="TinTuc.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -123,6 +124,13 @@
     </Compile>
     <Compile Include="sanphammoi.aspx.designer.cs">
       <DependentUpon>sanphammoi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TinTuc.aspx.cs">
+      <DependentUpon>TinTuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TinTuc.aspx.designer.cs">
+      <DependentUpon>TinTuc.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -23,11 +23,22 @@ namespace VoTrungNam_DoAn_LapTrinhWeb
 
             DataList1.DataSource = ds.Tables["Products"];
             DataList1.DataBind();
+
+            Random rnd = new Random();
+            String rndNum1 = rnd.Next(1, 16).ToString();
+            String rndNum2 = rnd.Next(24, 34).ToString();
+            SqlDataAdapter da2 = new SqlDataAdapter("select top 5 * from SANPHAM where ID between " + rndNum1 + " and " + rndNum2, cn1);
+
+            DataSet ds2 = new DataSet();
+            da2.Fill(ds2, "Products");
+
+            DataList2.DataSource = ds2.Tables["Products"];
+            DataList2.DataBind();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Session["SanPhamMua"] = Label1.Text
+            
         }
 
     }

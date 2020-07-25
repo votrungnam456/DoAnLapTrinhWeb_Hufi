@@ -38,24 +38,21 @@
           <div  class="navi">
             <a class="key" style="color: red" href="Home.aspx">TRANG CHỦ</a>
             <a href="gioithieu.aspx">GIỚI THIỆU</a>
-            <a href="#">TIN TỨC</a>
+            <a href="TinTuc.aspx">TIN TỨC</a>
             <a class="sanpham" href="sanphammoi.aspx">SẢN PHẨM MỚI</a>           
             <a href="#">LIÊN HỆ</a>
           </nav>
            <div class="slideshow-container">
                 <div class="mySlides fade">
                     <img src="images/NoiThatSlideShow.jpg">
-                    <!-- <div class="text">Caption Text</div> -->
                 </div>
 
                 <div class="mySlides fade">
                     <img src="images/NoiThatSlideShow2.jpg">
-                    <!-- <div class="text">Caption Two</div> -->
                 </div>
 
                 <div class="mySlides fade">
                     <img src="images/NoiThatSlideShow3.jpg">
-                    <!-- <div class="text">Caption Three</div> -->
                 </div>
                 <a class="prev" onclick="minusSlides()">&#10094;</a>
                 <a class="next" onclick="plusSlides()">&#10095;</a>
@@ -69,7 +66,7 @@
       <main>
        <section style="width:220px; margin-top: 25px;" class="sidebar">
         <div class="p-1">
-           <h2>Mẫu Thiết Kế Mới</h2>
+           <h2>Thiết kế nội thất</h2>
        <ul class="side-1">
            <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=VP">Văn phòng</asp:HyperLink></li>
            <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Home.aspx?LoaiSP=PK">Phòng Khách</asp:HyperLink></li>
@@ -115,6 +112,6 @@
     </form>
     <script src="SlideShow.js"></script>
     <script  src="loadHomePage.js"></script>
-     <%--<script  src="test.js"></script>--%>
+
 </body>
 </html>

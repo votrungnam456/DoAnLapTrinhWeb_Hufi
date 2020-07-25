@@ -35,42 +35,21 @@
           <div  class="navi">
             <a href="Home.aspx">TRANG CHỦ</a>
             <a class="key" style="color: red" href="gioithieu.aspx">GIỚI THIỆU</a>
-            <a href="#">TIN TỨC</a>
-            <a class="sanpham" href="sanphammoi.aspx">SẢN PHẨM MỚI</a>
-<%--            <div id="menu-sanpham">
-                <div class="menu-column">
-                    <h3>Nội thất nhà ở</h3>
-                    <ul>
-                        <li><a>Tủ</a></li>
-                        <li><a>Bàn</a></li>
-                        <li><a>Ghế</a></li>
-                    </ul>
-                </div>
-                <div id="Div1">
-                    <h3>Nội thất nhà ở</h3>
-                    <ul>
-                        <li><a>Tủ</a></li>
-                        <li><a>Bàn</a></li>
-                        <li><a>Ghế</a></li>
-                    </ul>
-                </div>
-            </div>    --%>            
+            <a href="TinTuc.aspx">TIN TỨC</a>
+            <a class="sanpham" href="sanphammoi.aspx">SẢN PHẨM MỚI</a>    
             <a href="#">LIÊN HỆ</a>
           </nav>
           <div class="slideshow-container">
                 <div class="mySlides fade">
                     <img src="images/NoiThatSlideShow.jpg">
-                    <!-- <div class="text">Caption Text</div> -->
                 </div>
 
                 <div class="mySlides fade">
                     <img src="images/NoiThatSlideShow2.jpg">
-                    <!-- <div class="text">Caption Two</div> -->
                 </div>
 
                 <div class="mySlides fade">
                     <img src="images/NoiThatSlideShow3.jpg">
-                    <!-- <div class="text">Caption Three</div> -->
                 </div>
                 <a class="prev" onclick="minusSlides()">&#10094;</a>
                 <a class="next" onclick="plusSlides()">&#10095;</a>
