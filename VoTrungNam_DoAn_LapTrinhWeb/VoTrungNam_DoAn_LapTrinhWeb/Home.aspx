@@ -3,9 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section  id="SPHomePage" class="main" style="width:740px;min-height:630px">            
-       <asp:DataList CssClass="td"  ID="DataList1" runat="server" RepeatColumns ="3" OnItemCommand="DataList1_ItemCommand">
+       <asp:DataList  ID="DataList1" runat="server" RepeatColumns ="3" OnItemCommand="DataList1_ItemCommand">
             <ItemTemplate>
-                <table id="tbl-datalist" style="text-align:center">
+                <table id="tbl-datalist">
                     <tr>
                         <td>
                             <asp:Image ID="Image3" runat="server" Height="110px" ImageUrl='<%# Eval("HINHANHVP") %>' Width="183px" />

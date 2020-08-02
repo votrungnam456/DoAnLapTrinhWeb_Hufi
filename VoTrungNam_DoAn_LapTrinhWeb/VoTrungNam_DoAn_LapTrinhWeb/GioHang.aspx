@@ -59,9 +59,36 @@
                 <span class="dot"></span>
             </div>
       </header>
-       <div>
-
-       </div>
+    <div class="gridView-gioHang">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" style="margin-right: 3px">
+            <Columns>
+                <asp:BoundField DataField="ID" HeaderText="Mã Sản Phẩm" />
+                <asp:BoundField DataField="TenSP" HeaderText="Tên Sản Phẩm" />
+                <asp:ImageField ControlStyle-Width="300px" ControlStyle-Height="300px" DataImageUrlField="HINHANHVP" HeaderText="Hình">
+                </asp:ImageField>
+                <asp:TemplateField HeaderText="Số lượng">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:TextBox ID="txtQuantity" runat="server" Text='<%# Eval("NumberhaveSale") %>'></asp:TextBox>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:BoundField DataField="GiaCa" HeaderText="Đơn Giá" />
+            </Columns>
+        </asp:GridView>
+        Tổng tiền:<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label> &nbsp; đồng
+    </div>
+    <div  class="gridView-gioHang">
+        <table>
+            <tr>
+                <td>
+                    <button class="button-gh"><a href="Home.aspx">Mua tiếp</a></button>
+                    <button class="button-gh"><a href="#">Thanh toán</a></button>
+                </td>
+            </tr>
+        </table>
+    </div>
     <footer style="background-color: black; color:white">
           <div class="one" >
               <P>VTN Furniture</P>

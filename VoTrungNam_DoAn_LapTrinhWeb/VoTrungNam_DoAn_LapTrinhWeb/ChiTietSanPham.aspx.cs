@@ -25,7 +25,7 @@ namespace VoTrungNam_DoAn_LapTrinhWeb
             DataList1.DataBind();
 
             Random rnd = new Random();
-            String rndNum1 = rnd.Next(1, 16).ToString();
+            String rndNum1 = rnd.Next(1, 19).ToString();
             String rndNum2 = rnd.Next(24, 34).ToString();
             SqlDataAdapter da2 = new SqlDataAdapter("select top 5 * from SANPHAM where ID between " + rndNum1 + " and " + rndNum2, cn1);
 
@@ -34,12 +34,15 @@ namespace VoTrungNam_DoAn_LapTrinhWeb
 
             DataList2.DataSource = ds2.Tables["Products"];
             DataList2.DataBind();
+
+            if (!IsPostBack)
+            {
+                GioHangCS buy = new GioHangCS();
+                buy.CreateItem();
+                Session["buy"] = buy;
+            }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            
-        }
 
     }
 }

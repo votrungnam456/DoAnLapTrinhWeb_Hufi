@@ -6,7 +6,7 @@
         <p>
             VTN Furniture là thương hiệu nội-ngoại thất trực thuộc HUFI Univer. 
             VTN Furniture có hơn 13 năm kinh nghiệm thiết kế, sản xuất, xuất khẩu sang các thị trường khó tính như Châu Âu, Mỹ, 
-            Canada,… Hiện nay, Furnist đang phát triển hoạt động trên nhiều lĩnh vực. Chúng tôi cung cấp các sản phẩm nội, 
+            Canada,… Hiện nay, VTN Furniture đang phát triển hoạt động trên nhiều lĩnh vực. Chúng tôi cung cấp các sản phẩm nội, 
             ngoại thất hiện đại và tư vấn thiết kế & thi công nội thất trọn gói. Các sản phẩm VTN Furniture mang lại luôn giúp
              không gian của bạn là một tác phẩm nghệ thuật.
         </p>

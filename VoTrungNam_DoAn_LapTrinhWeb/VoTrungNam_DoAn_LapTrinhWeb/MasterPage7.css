@@ -23,7 +23,7 @@ body{
 }
 header table
 {
-    margin-left:20%;
+    margin-left:15%;
     padding:2px;
 }
 .logo span
@@ -148,15 +148,23 @@ footer{
    margin-left: 15px;
 }
 
-.button-s, button{
+.button-s{
     margin-left: 100px;
     background-color: red;
     color: white;
     padding: 7px;
     border: none;
-
 }
-
+.button-gh {
+    background-color: red;
+    color: white;
+    padding: 7px;
+    border: none;
+}
+.button-gh a{
+    text-decoration:none;
+    color:white;
+}
 .id{
     color:red;
     text-align:center;
@@ -282,7 +290,25 @@ footer{
     font-size: 18px;
     font-family:'Times New Roman'
 }
+.gridView-gioHang {
+    width: 75%;
+    margin-left: 24%;
+    font-size: 18px;
+    font-family: 'Times New Roman'
+}
 .td
 {
     max-width:300px;
+}
+#tbl-datalist {
+    max-height: 200px;
+    max-width: 200px;
+    text-align: center;
+}
+.recomend {
+    max-height: 200px !important;
+    max-width: 200px;
+    text-align: center;
+    text-decoration:none;
+    padding-left:10%;
 }
