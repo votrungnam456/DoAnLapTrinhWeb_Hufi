@@ -23,7 +23,7 @@
                       </td>
                       <td style="padding-left:3%;width:200px">
                           <asp:Image ID="Image2" runat="server" ImageUrl="./images/GioHang.jpg" Height="43px" Width="64px"/>
-                          <p><a id="A1" href="#" style="text-decoration:none;color:white">Giỏ hàng</a></p>
+                          <p><a id="A1" href="GioHang.aspx" style="text-decoration:none;color:white">Giỏ hàng</a></p>
                       </td>
                   </tr>
               </table>
